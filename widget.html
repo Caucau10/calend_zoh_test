@@ -6,14 +6,14 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100px;
+      height: 150px;
     }
     
     .chevron {
       position: relative;
-      width: 200px;
-      height: 50px;
-      transform: rotate(-90deg);
+      width: 300px;
+      height: 60px;
+      transform: rotate(-45deg);
     }
     
     .chevron:before,
@@ -28,19 +28,19 @@
     
     .chevron:before {
       left: 0;
-      transform: skewY(45deg);
+      transform: skewX(45deg);
       transform-origin: top left;
     }
     
     .chevron:after {
       right: 0;
-      transform: skewY(-45deg);
+      transform: skewX(-45deg);
       transform-origin: top right;
     }
     
     .chevron-text {
       position: absolute;
-      top: 10px;
+      top: 20px;
       left: 0;
       right: 0;
       text-align: center;
@@ -54,7 +54,32 @@
 <body>
   <div class="chevron-container">
     <div class="chevron">
-      <div class="chevron-text">Étape 1</div>
+      <div class="chevron-text">Nouveau Lead</div>
+    </div>
+  </div>
+  <div class="chevron-container">
+    <div class="chevron">
+      <div class="chevron-text">Appel En cours</div>
+    </div>
+  </div>
+  <div class="chevron-container">
+    <div class="chevron">
+      <div class="chevron-text">Réunion Validée</div>
+    </div>
+  </div>
+  <div class="chevron-container">
+    <div class="chevron">
+      <div class="chevron-text">Opportunités créées</div>
+    </div>
+  </div>
+  <div class="chevron-container">
+    <div class="chevron">
+      <div class="chevron-text">Contrat envoyé</div>
+    </div>
+  </div>
+  <div class="chevron-container">
+    <div class="chevron">
+      <div class="chevron-text">En attente</div>
     </div>
   </div>
 </body>
